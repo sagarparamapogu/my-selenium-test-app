@@ -22,22 +22,22 @@ public class App {
 		System.out.println("Hello World!");
 
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(options);
 
 		// 1. Open the URL
 		// driver.get("http://13.58.166.105:8080/addressbook-2.0/");
-		driver.get("http://3.23.105.112:8081/contact.html");
+		driver.get("http://3.92.29.123:8081/contact.html");
 		// invoke implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 
-		driver.findElement(By.name("your_name")).sendKeys("Shubham");
+		driver.findElement(By.name("your_name")).sendKeys("Sagar");
 		
 		driver.findElement(By.name("phone_number")).sendKeys("999999999");
 		
-		driver.findElement(By.name("email_address")).sendKeys("xyz@abc.com");
+		driver.findElement(By.name("email_address")).sendKeys("india@tcs.com");
 		
-		driver.findElement(By.name("your_message")).sendKeys("Hello, How are you?");
+		driver.findElement(By.name("your_message")).sendKeys("Hello, This is DevOps Bootcamp");
 		
 		driver.findElement(By.id("my-button")).click();
 	
