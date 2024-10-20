@@ -22,7 +22,7 @@ public class App {
 		System.out.println("Hello World!");
 
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(options);
 
 		// 1. Open the URL
